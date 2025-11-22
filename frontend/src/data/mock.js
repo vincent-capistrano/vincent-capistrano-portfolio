@@ -105,7 +105,8 @@ export const projects = [
     tech: ["WordPress", "Elementor", "JavaScript"],
     link: "https://mrsupplychain.com",
     achievement: "Web Designer",
-    coins: 100
+    coins: 100,
+    unlockCost: 50
   },
   {
     id: 6,
@@ -114,7 +115,28 @@ export const projects = [
     tech: ["WordPress", "Elementor", "SEO"],
     link: "https://sixsigmalearning.com",
     achievement: "Learning Guru",
-    coins: 100
+    coins: 100,
+    unlockCost: 50
+  },
+  {
+    id: 7,
+    title: "Supply Chain Videos Website",
+    description: "Comprehensive collection of supply chain management and engineering videos for education.",
+    tech: ["WordPress", "Elementor", "Video Integration"],
+    link: "https://supplychainvideos.com",
+    achievement: "Video Master",
+    coins: 100,
+    unlockCost: 50
+  },
+  {
+    id: 8,
+    title: "Project Management Videos",
+    description: "Educational video platform for project management principles and best practices.",
+    tech: ["WordPress", "Elementor", "Content Management"],
+    link: "https://projectmanagementvideos.com",
+    achievement: "PM Expert",
+    coins: 100,
+    unlockCost: 50
   }
 ];
 
