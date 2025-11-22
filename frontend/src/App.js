@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter } from "react-router-dom";
+import { GameProvider } from "./context/GameContext";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -13,21 +14,23 @@ import { Toaster } from "./components/ui/toaster";
 
 function App() {
   return (
-    <div className="App bg-[#FAF4E8] min-h-screen">
-      <BrowserRouter>
-        <Header />
-        <main>
-          <Hero />
-          <About />
-          <Skills />
-          <Experience />
-          <Projects />
-          <Contact />
-        </main>
-        <Footer />
-        <Toaster />
-      </BrowserRouter>
-    </div>
+    <GameProvider>
+      <div className="App bg-[#FAF4E8] min-h-screen">
+        <BrowserRouter>
+          <Header />
+          <main>
+            <Hero />
+            <About />
+            <Skills />
+            <Experience />
+            <Projects />
+            <Contact />
+          </main>
+          <Footer />
+          <Toaster />
+        </BrowserRouter>
+      </div>
+    </GameProvider>
   );
 }
 
