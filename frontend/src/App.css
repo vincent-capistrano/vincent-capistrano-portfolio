@@ -65,3 +65,30 @@ html {
 .preload * {
     transition: none !important;
 }
+
+/* Coin Animation */
+@keyframes float-up {
+    0% {
+        opacity: 1;
+        transform: translateY(0) translateX(-50%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-50px) translateX(-50%);
+    }
+}
+
+.animate-float-up {
+    animation: float-up 1s ease-out forwards;
+}
+
+/* Shake Animation */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    75% { transform: translateX(4px); }
+}
+
+.animate-shake {
+    animation: shake 0.2s ease-in-out;
+}
