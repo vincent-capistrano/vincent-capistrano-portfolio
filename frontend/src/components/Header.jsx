@@ -38,10 +38,9 @@ const Header = () => {
             <span className="font-pixel text-xl text-[#4A3728] hidden sm:block">VINCENT</span>
           </div>
 
-          {/* Coins Display */}
-          <div className="hidden md:flex items-center space-x-2 bg-[#D4A574] border-4 border-[#4A3728] px-4 py-2">
-            <Coins className="w-5 h-5 text-[#FFB000]" />
-            <span className="font-pixel text-[#4A3728]">{coins}</span>
+          {/* Coins Display - Clickable */}
+          <div className="hidden md:block">
+            <CoinButton />
           </div>
 
           {/* Desktop Navigation */}
