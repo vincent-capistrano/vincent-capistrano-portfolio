@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Coins } from 'lucide-react';
-import PixelButton from './PixelButton';
+import { Menu, X } from 'lucide-react';
+import CoinButton from './CoinButton';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [coins, setCoins] = useState(1050);
 
   useEffect(() => {
     const handleScroll = () => {
