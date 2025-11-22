@@ -1,34 +1,67 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* Import Press Start 2P Font for 8-bit aesthetic */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Pixel Font Class */
+.font-pixel {
+    font-family: 'Press Start 2P', cursive;
+    line-height: 1.6;
+    image-rendering: pixelated;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+/* Remove default App alignment */
+.App {
+    text-align: left;
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+/* Smooth Scroll Behavior */
+html {
+    scroll-behavior: smooth;
 }
 
-.App-link {
-    color: #61dafb;
+/* Pixel Border Effect */
+.pixel-border {
+    image-rendering: pixelated;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+/* Custom Scrollbar - 8-bit Style */
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F5E6D3;
+    border-left: 4px solid #4A3728;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #D4A574;
+    border: 4px solid #4A3728;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #FFB000;
+}
+
+/* Selection Color */
+::selection {
+    background: #FFB000;
+    color: #4A3728;
+}
+
+::-moz-selection {
+    background: #FFB000;
+    color: #4A3728;
+}
+
+/* Pixel Noise Texture */
+.pixel-noise {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='3.5' numOctaves='1' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.05;
+}
+
+/* Disable transitions on page load */
+.preload * {
+    transition: none !important;
 }
